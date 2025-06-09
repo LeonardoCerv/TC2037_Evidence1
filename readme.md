@@ -84,9 +84,9 @@ For my implementation of a lexical analysis, I used Prolog to directly model the
 - Some examples of inputs and outputs:
   
   ```prolog
-  accepts("1122").  % true
-  accepts("111").   % false
-  accepts("122").   % false
+  accepts("1122").  % false
+  accepts("1112").  % false
+  accepts("1122").  % false
   accepts("201").   % false
   accepts("0120").  % true
   ```
@@ -127,7 +127,6 @@ function accepts(string):
 ## References
 
 - **Benjamín Valdez (2025).** TC2037 - Implementation of Computational Methods.
-- **Cormen, T.H., Leiserson, C.E., Rivest, R.L., & Stein, C. (2022).** Introduction to Algorithms (4th ed.). MIT Press.
-- **Sterling, L., & Shapiro, E. (2018).** The Art of Prolog (2nd ed.). MIT Press.
+- **SWI-Prolog Documentation (2025).** atom_chars/2 Predicate. Retrieved from https://www.swi-prolog.org/pldoc/man?predicate=atom_chars/2
 
 ---
